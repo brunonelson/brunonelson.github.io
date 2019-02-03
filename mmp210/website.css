@@ -1,0 +1,9 @@
+h1 {
+  color: black;
+  font-family: Helvetica, sans-serif;}
+h1{text-align: center}
+body{background-color:burlywood}
+img{width: 50%;
+margin: auto;
+display: block;}
+a{text-decoration: none;}
