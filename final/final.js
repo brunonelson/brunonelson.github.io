@@ -33,6 +33,16 @@ function mousePressed() {
     //background(0, 255, 0);
   }
 }
+function keyPressed() {
+  let keyIndex = -1;
+  if (key >= 'a' && key <= 'z') {
+      console.log("test");
+    keyIndex = key.charCodeAt(0) - 'a'.charCodeAt(0);
+ // animation.punch0001.png();
+   //   animation(ghost, 700, 300);
+      ghost.nextFrame();
+  }
+}
 
 //function setup() {
 //  createCanvas(1000, 1000);
@@ -40,6 +50,9 @@ function mousePressed() {
 
 function draw() {
   background(255, 255, 255);
+    ghost.draw(700,300);
+    ghost.stop();
+  
 
   //specify the animation instance and its x,y position
   //animation() will update the animation frame as well
